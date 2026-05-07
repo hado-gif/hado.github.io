@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Olympic Diving Score Trends</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				font-family: Arial, sans-serif;
+				background: #f4f6fb;
+				color: #1f2937;
+			}
+
+			main {
+				max-width: 860px;
+				margin: 0 auto;
+				padding: 3rem 1.25rem 4rem;
+			}
+
+			.card {
+				background: #ffffff;
+				border: 2px solid #cbd5e1;
+				border-radius: 12px;
+				padding: 2rem;
+				box-shadow: 0 18px 40px -28px rgba(15, 23, 42, 0.45);
+			}
+
+			h1 {
+				margin: 0 0 1rem;
+				font-size: 2.25rem;
+				line-height: 1.15;
+			}
+
+			h2 {
+				margin: 2rem 0 0.75rem;
+				font-size: 1.25rem;
+			}
+
+			p,
+			li {
+				font-size: 1rem;
+				line-height: 1.7;
+			}
+
+			ul {
+				padding-left: 1.25rem;
+			}
+
+			.actions {
+				display: flex;
+				gap: 0.9rem;
+				flex-wrap: wrap;
+				margin: 1.5rem 0 0.5rem;
+			}
+
+			.button-link {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 46px;
+				padding: 0.75rem 1rem;
+				border-radius: 8px;
+				border: 2px solid #1f2937;
+				color: #1f2937;
+				background: #ffffff;
+				font-weight: 700;
+				text-decoration: none;
+			}
+
+			.button-link.primary {
+				background: #1d4ed8;
+				border-color: #1d4ed8;
+				color: #ffffff;
+			}
+
+			.button-link:focus {
+				outline: 3px solid #93c5fd;
+				outline-offset: 2px;
+			}
+
+			.meta {
+				margin-top: 1.5rem;
+				padding-top: 1.5rem;
+				border-top: 1px solid #cbd5e1;
+				color: #475569;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section class="card" aria-labelledby="project-title">
+				<h1 id="project-title">Olympic Diving Score Trends</h1>
+				<p>
+					This GitHub Pages homepage introduces an interactive D3 visualization of Olympic diving competitions from 2016, 2020, and 2024. The chart compares cumulative scoring across rounds, final rankings, and dive-by-dive performance by event.
+				</p>
+
+				<div class="actions">
+					<a class="button-link primary" href="vis.html">Open Visualization</a>
+					<a class="button-link" href="https://github.com/hado-gif/hado-gif.github.io">View Repository</a>
+				</div>
+
+				<h2>What is included</h2>
+				<ul>
+					<li>Filters for Olympic year and diving event</li>
+					<li>A cumulative score progression line chart</li>
+					<li>Final rankings for the selected competition</li>
+					<li>Dive code comparison against event averages</li>
+					<li>Access to the underlying competition data</li>
+				</ul>
+
+				<div class="meta">
+					<p>
+						The visualization itself is available at <a href="vis.html">vis.html</a>.
+					</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
